@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "src/style.css">
+    <title>DUNGEON ENTRY</title>
+</head>
+<body>
+        <video class = "background-video" autoplay muted loop id="background-video">
+            <source src="./src/full/SALEM - KING NIGHT [fHiO2HTGUcA].webm" type="video/mp4">
+        </video>
+    <nav class = "navbar open">
+        <img src = "./src/full/usa.png" width="110" height="60" alt = "logo">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="video.html">VIDEO</a></li>
+            <li><a href="audio.html">MUSIC</a></li>
+            <li><a href="book.html">BOOK</a></li>
+            <li class = "work"><a href = "#">WORK</a>
+                <ul>
+                    <li><a href="form.html">FORM</a></li>
+                    <li><a href="math.html">MATH</a></li>
+                    <li><a href="api.html">API</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div><a href="https://www.heavensgate.com/">ENTRY</a>
+            <div class = 'burger' id="burger2">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <main class = 'form'>
+        <form>
+            <fieldset>
+                <legend>STEAM ACCOUNT INFORMATION</legend>
+                <label for="Nickname">LOG IN NICKNAME</label>
+                <input id="Nickname" name = "new_nickname" placeholder="log in nickname lol" type="text" required/>
+                <label for="Nickname">INNER NICKNAME</label>
+                <input id = "Second Nickname" name="new_second_nickname" placeholder="nickname that see everyone" type="text" required/>
+                <label for="age">DATE OF BIRTH ACCOUNT</label>
+                <input id="age" name="new_age" placeholder="dd/mm/yyyy format" type="number" required/>
+                <label for="link">STRAIGHT ACCOUNT LINK</label>
+                <input id="link" name="new_link" placeholder="it's changable setting in steam" type="text"/>
+                <label for="game">FAV GAME</label>
+                <input id="game" name="new_game" placeholder="fav game, indeed" type="text"/>
+                <label for="hours">TIME PLAYED IN FAV GAME</label>
+                <input id="hours" name="new_hours" placeholder="hours will be enought" type="number">
+            </fieldset>
+
+            <fieldset>
+                <legend>INFORMATION ABOUT THE GAME</legend>
+                <label for="genre">GENERE OF GAME</label>
+                <input id="genre" name="new_genre" placeholder="genre" type="text" required/>
+                <label for="developer"> DEV OF GAME </label>
+                <input id="developer" name="new_developer" placeholder="developer" type="text" required/>
+                <label for="review">YOUR OPINION</label>
+                <input id="review" name="new_review"placeholder='review' type="text" required/>
+            </fieldset>
+            <button type="submit">submit</button>
+        </form>
+    </main>
+    <footer>
+        <a href="https://github.com/sweezing" target="_blank"><img src="src/full/instagram-white-icon.png" height="50" width="50" alt ='instagram'></a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
