@@ -446,25 +446,7 @@ P{
     .burger span:nth-child(3) {
         transform: translateY(10px); /* Перемещение третьей полоски вниз на 10px */
     }
-    
-    .burger span {
-        position: absolute; /* Абсолютное позиционирование для расположения полосок внутри контейнера */
-        width: 30px; /* Ширина каждой полоски */
-        left: 5px; /* Отступ от левого края контейнера */
-        height: 3px; /* Высота полоски */
-        background-color: black; /* Цвет полоски */
-        bottom: 20px; /* Расположение полоски от нижнего края контейнера */
-    }
-    
-    /* Стили для первой полоски бургер-меню */
-    .burger span:nth-child(1) {
-        transform: translateY(-10px); /* Перемещение первой полоски вверх на 10px */
-    }
-    
-    /* Стили для третьей полоски бургер-меню */
-    .burger span:nth-child(3) {
-        transform: translateY(10px); /* Перемещение третьей полоски вниз на 10px */
-    } /* Стили для списка навигационного меню */
+
     .navbar {
         background: radial-gradient(circle at top left, gray,black ,gray )
     }
@@ -553,10 +535,10 @@ P{
     }
     
     .navbar ul .work ul li:hover a:hover {
-        color: rgb(192, 192, 192); /* Change text color to white when hovering over the link */
+        color:#7cc6e5 ; /* Change text color to white when hovering over the link */
     }
     .navbar ul .work:hover ul li a {
-        color: rgb(255, 169, 169); /* Set text color to black when hovering over the parent */
+        color: aliceblue; /* Set text color to black when hovering over the parent */
     }
     .form form fieldset{
         width: 80%;
