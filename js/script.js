@@ -107,3 +107,5 @@ ctg.addEventListener("click", (event) => {
     event.preventDefault()
     calculus_trg("ctg");
 });
+
+document.getElementById("special").classList.add("special1")
