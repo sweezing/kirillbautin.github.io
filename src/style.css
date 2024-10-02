@@ -608,7 +608,6 @@ P{
 
 .math form fieldset .counters div label, input {
     flex-direction: row;
-    margin: auto;
     text-align: center;
 }
 
