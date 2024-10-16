@@ -543,10 +543,17 @@ P{
     .form form fieldset{
         width: 80%;
     }
-
-    
-
 }
+
+
+/**
+
+                CALCULATOR CONFIGURATIONS
+
+**/
+
+
+
 
 @media (min-width: 700px) and (max-width: 900px) {
     /* При ширине экрана от 700px до 900px */
@@ -650,4 +657,83 @@ P{
 
 .special1 {
     padding-right: 20px;
+}
+
+
+
+
+
+/**
+
+                    API CONFIGURATION
+
+**/
+
+.API {
+    display: flex;
+    flex-direction: column;
+}
+
+.API .Petro {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.API .Petro img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Tomsk {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.API .Tomsk img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Gogogogo {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.API .Gogogogo img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .Petro, .Tomsk, .Gogogogo img {
+    border-radius: 4px;
+}
+
+@media (min-width: 700px) {
+
+
+    .API .Petro, .Tomsk, .Gogogogo {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .API .Petro, .Tomsk, .Gogogogo span {
+        font-size: 1.05rem;
+    }
+
 }
