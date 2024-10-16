@@ -1,5 +1,5 @@
 const petro = document.getElementById('Petro')
-const tomsk = document.getElementById('Toms')
+const tomsk = document.getElementById('Tomsk')
 const gogo = document.getElementById('Gogogogo')
 
 async function Api() {
@@ -13,18 +13,21 @@ async function Api() {
 }
 
 async function output() {
+    
     try {
         let out = await Api()
         console.log(out)
-        petro.textContent = 'Air temperature: ${out.[0].current.temperature_2m} \u0000c'
-        tomsk.textContent = 'Air temperature: ${out.[1].current.temperature_2m}'
-        gogo.textContent = 'Air temperature: ${out.[2].current.temperature_2m}'
+        petro.textContent = 'Air temperature: ' + out[0].current.temperature_2m
+        tomsk.textContent = 'Air temperature: ' + out[1].current.temperature_2m
+        gogo.textContent = 'Air temperature: ' + out[2].current.temperature_2m
     }
+    
     catch(error) {
         console.log(error)
     }
+    
     finally {
-        setTimeout(output, 10000)
+        stop
     }
 }
 

@@ -107,7 +107,6 @@ p {
 p:hover {
     background-color: #1b1b1b; /* Синий фон при наведении */
     transition: 0.5s ease;
-    border-radius: 5%;
 }
 
 /* Секции внутри контейнера */
@@ -162,7 +161,6 @@ p:hover {
 
 .audio1 a:hover, .audio2 a:hover, .audio3 a:hover {
     background-color: rgb(24, 24, 24);
-    border-radius: 10px;
     color: #7cc6e5;
     transition: 0.5s ease;
 }
@@ -209,7 +207,6 @@ p:hover {
 
 .book1 a:hover {
     background-color: rgb(24, 24, 24);
-    border-radius: 10px;
     color: #7cc6e5;
     transition: 0.5s ease;
 }
@@ -674,66 +671,57 @@ P{
     flex-direction: column;
 }
 
-.API .Petro {
+.API section {
     display: flex;
     flex-direction: row;
-    width: 70%;
-    margin: auto;
     margin-top: 40px;
-    padding-top: 20px;
 }
 
-.API .Petro img, span {
-    margin: auto;
-    width: 50%;
-    height: auto;
-}
-
-.API .Tomsk {
+.API section span {
     display: flex;
-    flex-direction: row;
-    width: 70%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
     margin: auto;
-    margin-top: 40px;
-    padding-top: 20px;
-}
-
-.API .Tomsk img, span {
-    margin: auto;
-    width: 50%;
+    width: 40%;
     height: auto;
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
 }
 
-.API .Gogogogo {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    margin: auto;
-    margin-top: 40px;
-    padding-top: 20px;
+.API section span:hover {
+    background-color: rgb(24, 24, 24);
+    color: #7cc6e5;
+    transition: 0.5s ease;
 }
 
-.API .Gogogogo img, span {
-    margin: auto;
-    width: 50%;
-    height: auto;
+.API img {
+    border-radius: 10%;
+    width: 25%;
+    height: 25%;
+    margin-left: 50px;
 }
 
-.API .Petro, .Tomsk, .Gogogogo img {
-    border-radius: 4px;
-}
+@media (max-width: 700px) {
 
-@media (min-width: 700px) {
-
-
-    .API .Petro, .Tomsk, .Gogogogo {
-        display: inline;
-        text-align: center;
-        font-size: 1.2rem;
+    .API section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
     }
 
-    .API .Petro, .Tomsk, .Gogogogo span {
-        font-size: 1.05rem;
+    .API img {
+        align-items: center;
+        margin: auto;
+        border-radius: 10%;
+        width: 90%;
+        height: 25%;
     }
 
+    .API section span {
+        margin-top: 20px;
+        width: 80%;
+        font-size: 1em;
+    }
 }
